@@ -1,0 +1,14 @@
+python -m mta.scripts.run_webarena_agent \
+    --engine openai \
+    --model gpt-4o-mini \
+    --base-url https://api.openai.com/v1 \
+    --api-key   \
+    --env-id browsergym/webarena \
+    --limit 1 \
+    --n-parallel 4 \
+    --max-response-length 10000 \
+    --max-prompt-length 20000 \
+    --max-steps 4 \
+    --agent-scaffold sweagent \
+    --env-backend docker \
+    --use-fn-calling

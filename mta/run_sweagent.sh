@@ -1,0 +1,15 @@
+python -m mta.scripts.run_sweagent_vllm \
+    --engine openai \
+    --model gpt-4o-mini \
+    --base-url https://api.openai.com/v1 \
+    --api-key   \
+    --dataset SWE_Bench_Verified \
+    --split test \
+    --limit 1 \
+    --n-parallel 4 \
+    --max-response-length 10000 \
+    --max-prompt-length 20000 \
+    --max-steps 4 \
+    --agent-scaffold sweagent \
+    --env-backend docker \
+    --use-fn-calling

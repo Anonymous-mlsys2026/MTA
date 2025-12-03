@@ -1,0 +1,11 @@
+python -m mta.scripts.run_humaneval_agent \
+    --engine openai \
+    --model gpt-4o-mini \
+    --base-url https://api.openai.com/v1 \
+    --api-key   \
+    --limit 1 \
+    --n-parallel 4 \
+    --max-response-length 10000 \
+    --max-prompt-length 10000 \
+    --max-steps 4 \
+    --temperature 1
